@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Ahmad Salem</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold">Ahmad Salem</a>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-orange-500">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-orange-500 font-semibold">About</a>
+        <a href="projects.html" class="text-gray-700 hover:text-orange-500">Projects</a>
+        <a href="contact.html" class="text-gray-700 hover:text-orange-500">Contact</a>
+        <a href="cv.html" class="text-gray-700 hover:text-orange-500">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold mb-8 text-center">My Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="project-card cursor-pointer" data-project="1">
+        <img src="images/project1.jpg" alt="Project 1" class="rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mt-2 text-center">Project 1</h3>
+      </div>
+      <div class="project-card cursor-pointer" data-project="2">
+        <img src="images/project2.jpg" alt="Project 2" class="rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mt-2 text-center">Project 2</h3>
+      </div>
+      <div class="project-card cursor-pointer" data-project="3">
+        <img src="images/project3.jpg" alt="Project 3" class="rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mt-2 text-center">Project 3</h3>
+      </div>
+    </div>
+
+    <!-- Modal for project details -->
+    <div id="project-detail" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+      <div class="bg-white rounded-xl max-w-lg w-11/12 p-6 relative transform scale-90 opacity-0 transition-all duration-300">
+        <button id="close-detail" class="absolute top-3 right-5 text-2xl font-bold text-gray-700">&times;</button>
+        <h3 id="detail-title" class="text-2xl font-bold mb-4 text-center"></h3>
+        <img id="detail-img" src="" alt="" class="rounded-lg shadow-lg w-full mb-4">
+        <p id="detail-desc" class="text-gray-700"></p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="bg-white shadow-inner py-6 text-center">
+    <p class="text-gray-600">© 2025 Ahmad Salem. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
